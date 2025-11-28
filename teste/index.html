@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Athena - Menu</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+
+<body>
+    <main class="menu-container">
+        <h1 class="game-title">Athena</h1>
+        <p class="game-subtitle">Jogo educativo - Filósofos</p>
+
+        <section class="menu-buttons">
+            <label for="playerName" class="label">Seu nome</label>
+            <input id="playerName" type="text" maxlength="20" placeholder="Digite seu nome" />
+            <button class="btn" id="startBtn">INICIAR</button>
+            <button class="btn" id="rankBtn">RANK</button>
+            <button class="btn" id="creditsBtn">CRÉDITOS</button>
+        </section>
+
+        <section id="rankSection" class="section-box hidden">
+            <h2>RANK (local)</h2>
+            <div id="rankContent">Sem registros</div>
+            <button class="btn" id="rankBack">VOLTAR</button>
+        </section>
+
+        <section id="creditsSection" class="section-box hidden">
+            <h2>CRÉDITOS</h2>
+            <p>Desenvolvedores: @KOLDAPLZ</p>
+            <p>Equipe: Athena</p>
+            <button class="btn" id="creditsBack">VOLTAR</button>
+        </section>
+    </main>
+
+    <script src="javascript/script1.js"></script>
+</body>
+
+</html>

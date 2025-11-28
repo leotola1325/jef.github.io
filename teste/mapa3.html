@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Athena - Mapa 2</title>
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+
+<body>
+    <div class="game-root">
+        <div id="hud" class="hud">
+            <div id="playerNameHUD"></div>
+            <div id="livesHUD"></div>
+            <div id="timeHUD"></div>
+        </div>
+
+        <section id="stage1" class="stage active">
+            <img class="background" src="img/mapa2.jpg" alt="fundo" />
+            <div class="stage-content">
+            </div>
+        </section>
+
+        <section id="stage2" class="stage">
+            <img class="background" src="img/cenario2map2.png" alt="fundo" />
+            <div class="stage-content">
+                <div class="hint-buttons">
+
+                    <button class="small btn-book1" data-id="1">1botao</button>
+                    <button class="small btn-book2" data-id="2">2botao</button>
+                    <button class="small btn-book3" data-id="3">3botao</button>
+
+                </div>
+                <div id="hintImageBox" class="hint-image hidden">
+                    <img id="hintImage" src="map2_dica1.png" alt="dica" />
+                </div>
+            </div>
+        </section>
+
+        <section id="stage3" class="stage">
+            <img class="background" src="img/map2cenario3.png" alt="fundo" />
+            <div class="stage-content">
+                <button id="openQuestion" class="btn">responder ba</button>
+                <div id="questionPanel" class="question-panel hidden">
+                    <img src="img/finalc.png" alt="pergunta" class="question-img" />
+                    <div class="answers">
+                        <button class="answer-btn" data-type="R">socrates</button>
+                        <button class="answer-btn" data-type="R">platão</button>
+                        <button class="answer-btn" data-type="V"> aristoteles </button>
+                        <button class="answer-btn" data-type="R"> tesla</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stage4" class="stage">
+            <img class="background" src="img/perfect.png" alt="fundo" />
+            <div class="stage-content">
+                <button id="finishBack" class="btn">VOLTAR AO MENU</button>
+            </div>
+        </section>
+
+        <div id="player" class="player" style="left:45%; top:75%;"></div>
+        <div id="portal" class="portal" style="left:95%; top:72%;"></div>
+        <div class="controls">Use ← → ou A D para mover (só frente/trás).</div>
+    </div>
+
+    <script src="javascript/script3.js"></script>
+</body>
+
+</html>

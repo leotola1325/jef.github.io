@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Athena - Mapa 1</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+    <div class="game-root">
+        <div id="hud" class="hud">
+            <div id="playerNameHUD"></div>
+            <div id="livesHUD"></div>
+            <div id="timeHUD"></div>
+        </div>
+
+        <!-- SECTIONS: cada cenário é um section -->
+        <section id="stage1" class="stage active">
+            <!-- cenário 1: início -->
+            <img class="background" src="img/fundo_um.png" alt="fundo" />
+            <div class="stage-content">
+                <p class="hint"></p>
+            </div>
+        </section>
+
+        <section id="stage2" class="stage">
+            <!-- cenário 2: pilares + botões 1-4 (todos elementos no HTML) -->
+            <img class="background" src="img/3.png" alt="fundo" />
+            <div class="stage-content">
+                <div class="hint-buttons">
+
+                    <button class="small btn-book1" data-id="1">1bo</button>
+                    <button class="small btn-book2" data-id="2">2bo</button>
+                    <button class="small btn-book3" data-id="3">3bo</button>
+                    <button class="small btn-book4" data-id="4">4bo</button>
+                </div>
+
+                <div id="hintImageBox" class="hint-image hidden">
+                    <img id="hintImage" src="img/perguntas final.png" alt="dica" />
+                </div>
+            </div>
+        </section>
+
+        <section id="stage3" class="stage">
+            <!-- cenário 3: responder -->
+            <img class="background" src="img/5.png" alt="fundo" />
+            <div class="stage-content">
+                <button id="openQuestion" class="btn"></button>
+
+                <div id="questionPanel" class="question-panel hidden">
+                    <img src="img/finalb.png" alt="pergunta" class="question-img" />
+                    <div class="answers">
+                        <button class="answer-btn" data-type="R">Galileu</button>
+                        <button class="answer-btn" data-type="R">N.Tesla</button>
+                        <button class="answer-btn" data-type="V">Platao</button> <!-- correta -->
+                        <button class="answer-btn" data-type="R">Socrates</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stage4" class="stage">
+            <img class="background" src="img/parabens.jpg" alt="fundo" />
+            <div class="stage-content">
+                <div class="parabens-buttons">
+                    <button id="toMapa3" class="btn-parabens">CONTINUAR jogo2 </button>
+                    <button id="menuBack" class="btn-parabens">VOLTAR AO MENU</button>
+                </div>
+
+        </section>
+
+        <!-- jogador (GIF) e portal -->
+        <div id="player" class="player" style="left:45%; top:75%;"></div>
+        <div id="portal" class="portal" style="left:95%; top:72%;"></div>
+
+        <div class="controls">Use ← → ou A D para mover (só frente/trás).</div>
+    </div>
+
+    <script src="javascript/script2.js"></script>
+</body>
+
+</html>
